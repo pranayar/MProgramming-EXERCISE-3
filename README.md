@@ -162,10 +162,10 @@ This project was created for academic purposes.
 ## Screenshots
 
 ### Home Screen
-![Home Screen](screenshots/home.png)
+![Home Screen](screenshots/Home.png)
 
 ### Family Messages
-![Family Messages](screenshots/family.png)
+![Family Messages](screenshots/Family.png)
 
 ### School Messages
-![School Messages](screenshots/school.png)
+![School Messages](screenshots/School.png)

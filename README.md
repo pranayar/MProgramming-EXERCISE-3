@@ -1,97 +1,171 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Message Directory App
 
-# Getting Started
+## Overview
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+Message Directory App is a React Native mobile application that displays a list of message directories. Users can select a directory and view the messages stored within that category.
 
-## Step 1: Start Metro
+This project was developed as part of a React Native mobile application assignment.
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+---
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+## Features
 
-```sh
-# Using npm
-npm start
+* Display six message directories:
 
-# OR using Yarn
-yarn start
+  * You
+  * Home
+  * Love
+  * Family
+  * Friends
+  * School
+
+* Responsive two-column layout
+
+* Color-coded directory icons
+
+* Navigation between screens
+
+* View messages stored in each directory
+
+* Android emulator support
+
+---
+
+## Technologies Used
+
+* React Native
+* JavaScript
+* React Navigation
+* Android Studio
+* Metro Bundler
+
+---
+
+## Project Structure
+
+```text
+MessageDirectoryApp
+│
+├── src
+│   ├── data
+│   │   └── messages.js
+│   │
+│   ├── screens
+│   │   ├── HomeScreen.js
+│   │   └── MessageScreen.js
+│   │
+│   └── components
+│
+├── App.tsx
+├── package.json
+└── README.md
 ```
 
-## Step 2: Build and run your app
+---
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+## Installation
 
-### Android
+### Prerequisites
 
-```sh
-# Using npm
-npm run android
+* Node.js
+* npm
+* Android Studio
+* Android SDK
+* Android Emulator
 
-# OR using Yarn
-yarn android
+---
+
+### Clone Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/MessageDirectoryApp.git
+cd MessageDirectoryApp
 ```
 
-### iOS
+---
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
+### Install Dependencies
 
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
+```bash
+npm install
 ```
 
-Then, and every time you update your native dependencies, run:
+---
 
-```sh
-bundle exec pod install
+### Start Metro Bundler
+
+```bash
+npx react-native start
 ```
 
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
+---
 
-```sh
-# Using npm
-npm run ios
+### Run Application
 
-# OR using Yarn
-yarn ios
+Open an Android Emulator from Android Studio and execute:
+
+```bash
+npx react-native run-android
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
+---
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+## Application Screens
 
-## Step 3: Modify your app
+### Home Screen
 
-Now that you have successfully run the app, let's make changes!
+Displays all available message directories.
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+### Message Screen
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
+Displays messages associated with the selected directory.
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+---
 
-## Congratulations! :tada:
+## Sample Directories
 
-You've successfully run and modified your React Native App. :partying_face:
+| Directory | Example Messages                      |
+| --------- | ------------------------------------- |
+| You       | Believe in yourself, Stay focused     |
+| Home      | Welcome home, Dinner at 7 PM          |
+| Love      | Spread kindness, Love yourself        |
+| Family    | Call your parents, Family comes first |
+| Friends   | Meet this weekend, Stay in touch      |
+| School    | Study React Native, Prepare for exam  |
 
-### Now what?
+---
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
+## How to Use
 
-# Troubleshooting
+1. Launch the application.
+2. Select a directory from the home screen.
+3. View messages stored within the selected category.
+4. Use the back button to return to the directory list.
 
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+---
 
-# Learn More
+## Author
 
-To learn more about React Native, take a look at the following resources:
+Pranay Arora
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+Master of Science in Computer Science
+
+Lakehead University
+
+---
+
+## License
+
+This project was created for academic purposes.
+
+
+## Screenshots
+
+### Home Screen
+![Home Screen](screenshots/home.png)
+
+### Family Messages
+![Family Messages](screenshots/family.png)
+
+### School Messages
+![School Messages](screenshots/school.png)
